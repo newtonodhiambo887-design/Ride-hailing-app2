@@ -1,0 +1,91 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - Ride Hailing App</title>
+
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ride Hailing App</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="book-ride.html">Book Ride</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <h2>Customer Dashboard</h2>
+
+        <!-- Customer Profile -->
+        <section class="profile-card">
+            <h3>My Profile</h3>
+
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@email.com</p>
+            <p><strong>Phone:</strong> +254 712 345 678</p>
+
+            <a href="book-ride.html">
+                <button>Book a New Ride</button>
+            </a>
+        </section>
+
+        <!-- Recent Rides -->
+        <section class="rides-card">
+            <h3>Recent Rides</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Pickup</th>
+                        <th>Destination</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>08/07/2026</td>
+                        <td>Nairobi CBD</td>
+                        <td>Westlands</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>06/07/2026</td>
+                        <td>Airport</td>
+                        <td>Kilimani</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>03/07/2026</td>
+                        <td>Upper Hill</td>
+                        <td>South B</td>
+                        <td>Cancelled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ride Hailing App. All Rights Reserved.</p>
+    </footer>
+
+    <script src="customer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* ==========================
+   RESET
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+body {
+    background-color: #f80606;
+    color: #333;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* ==========================
+   DASHBOARD
+========================== */
+.dashboard {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.dashboard h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+.profile-card,
+.rides-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.profile-card h3,
+.rides-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.profile-card p {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+/* ==========================
+   DRIVER STATUS
+========================== */
+#driverStatus {
+    color: green;
+    font-weight: bold;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Offline Button */
+#toggleStatusBtn {
+    margin-top: 20px;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+#toggleStatusBtn:hover {
+    background-color: #163172;
+}
+
+/* Accept Button */
+.accept-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 8px;
+}
+
+.accept-btn:hover {
+    background-color: #218838;
+}
+
+/* Reject Button */
+.reject-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c82333;
+}
+
+/* ==========================
+   TABLE
+========================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #eef4ff;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .profile-card,
+    .rides-card {
+        padding: 20px;
+    }
+
+    button {
+        margin-top: 5px;
+    }
+}
+

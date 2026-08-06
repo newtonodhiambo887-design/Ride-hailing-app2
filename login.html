@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ride Hailing App</title>
+
+    <link rel="stylesheet" href="logins.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <h1>Ride Hailing App</h1>
+        <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <label for="role">Login As</label>
+            <select id="role" name="role" required>
+                <option value="">Select Role</option>
+                <option value="customer">Customer</option>
+                <option value="driver">Driver</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">Register Here</a>
+        </p>
+
+        <p>
+            <a href="index.html">← Back to Home</a>
+        </p>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

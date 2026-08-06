@@ -1,0 +1,145 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Ride Hailing App</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ride Hailing App</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin.html">Dashboard</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <h2>Administrator Dashboard</h2>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Customers</h3>
+                <p>250</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Drivers</h3>
+                <p>60</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Rides</h3>
+                <p>1,250</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>KSh 2,500,000</p>
+            </div>
+
+        </section>
+
+        <!-- Drivers -->
+        <section class="table-section">
+
+            <h3>Registered Drivers</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Vehicle</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Peter Ochieng</td>
+                        <td>Toyota Premio</td>
+                        <td>Approved</td>
+                        <td>
+                            <button class="delete-btn">Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mary Akinyi</td>
+                        <td>Nissan Note</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="approve-btn">Approve</button>
+                            <button class="delete-btn">Remove</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Customers -->
+        <section class="table-section">
+
+            <h3>Registered Customers</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Trips</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@email.com</td>
+                        <td>18</td>
+                        <td>
+                            <button class="delete-btn">Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@email.com</td>
+                        <td>9</td>
+                        <td>
+                            <button class="delete-btn">Remove</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ride Hailing App. All Rights Reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

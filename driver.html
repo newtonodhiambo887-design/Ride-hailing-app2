@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard - Ride Hailing App</title>
+
+    <link rel="stylesheet" href="driver.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ride Hailing App</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="driver.html">Dashboard</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+
+        <h2>Driver Dashboard</h2>
+
+        <!-- Driver Profile -->
+        <section class="profile-card">
+            <h3>Driver Profile</h3>
+
+            <p><strong>Name:</strong> Peter Ochieng</p>
+            <p><strong>Vehicle:</strong> Toyota Premio</p>
+            <p><strong>Registration No:</strong> KDA 123A</p>
+            <p><strong>Status:</strong> <span id="driverStatus">Available</span></p>
+
+            <button id="toggleStatusBtn">
+                Go Offline
+            </button>
+        </section>
+
+        <!-- Ride Requests -->
+        <section class="rides-card">
+            <h3>Incoming Ride Requests</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Passenger</th>
+                        <th>Pickup</th>
+                        <th>Destination</th>
+                        <th>Fare</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Nairobi CBD</td>
+                        <td>Westlands</td>
+                        <td>KSh 450</td>
+                        <td>
+                            <button class="accept-btn">Accept</button>
+                            <button class="reject-btn">Reject</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mary Akinyi</td>
+                        <td>Airport</td>
+                        <td>Kilimani</td>
+                        <td>KSh 800</td>
+                        <td>
+                            <button class="accept-btn">Accept</button>
+                            <button class="reject-btn">Reject</button>
+                        </td>
+                    </tr>
+
+                </body>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ride Hailing App. All Rights Reserved.</p>
+    </footer>
+
+    <script src="driver.js"></script>
+
+</body>
+</html>
